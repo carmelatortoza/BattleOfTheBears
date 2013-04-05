@@ -1,21 +1,20 @@
 //
-//  HowToPage2ViewController.m
+//  HowToPage4ViewController.m
 //  AlienInvasion
 //
 //  Created by carmela.tortoza on 4/5/13.
 //  Copyright (c) 2013 Jose Mari Salandanan. All rights reserved.
 //
 
-#import "HowToPage2ViewController.h"
-#import "HowToPage1ViewController.h"
-#import "MainMenuViewController.h"
+#import "HowToPage4ViewController.h"
 #import "HowToPage3ViewController.h"
+#import "MainMenuViewController.h"
 
-@interface HowToPage2ViewController ()
+@interface HowToPage4ViewController ()
 
 @end
 
-@implementation HowToPage2ViewController
+@implementation HowToPage4ViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -44,7 +43,7 @@
 }
 
 - (IBAction)backButtonPressed:(id)sender {
-    HowToPage1ViewController *mainMenuViewController = [[HowToPage1ViewController alloc]init];
+    HowToPage3ViewController *mainMenuViewController = [[HowToPage3ViewController alloc]init];
     mainMenuViewController.modalInPopover = UIModalTransitionStyleCrossDissolve;
     [self presentViewController:mainMenuViewController animated:YES completion:nil];
 }
@@ -55,9 +54,4 @@
     [self presentViewController:mainMenuViewController animated:YES completion:nil];
 }
 
-- (IBAction)forwardButtonPressed:(id)sender {
-    HowToPage3ViewController *mainMenuViewController = [[HowToPage3ViewController alloc]init];
-    mainMenuViewController.modalInPopover = UIModalTransitionStyleCrossDissolve;
-    [self presentViewController:mainMenuViewController animated:YES completion:nil];
-}
 @end
